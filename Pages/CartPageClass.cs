@@ -11,11 +11,8 @@ namespace AutomationRedo {
             this.cartDriver = driver; //same driver from unit test
         }
 
-        public void CheckoutCart(){
+        public void CheckoutCart_AccessCart2(){
             cartDriver.FindElement(checkoutButton).Click();
-        }
-
-        public void InfoFillOut(){
         }
     }
 }

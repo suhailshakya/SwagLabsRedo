@@ -100,3 +100,4 @@
 /Users/suhailshakya/Projects/AutomationRedo/bin/Debug/net8.0/selenium-manager/macos/selenium-manager
 /Users/suhailshakya/Projects/AutomationRedo/bin/Debug/net8.0/selenium-manager/windows/selenium-manager.exe
 /Users/suhailshakya/Projects/AutomationRedo/bin/Debug/net8.0/WebDriver.dll
+/Users/suhailshakya/Projects/AutomationRedo/obj/Debug/net8.0/AutomationRedo.sourcelink.json

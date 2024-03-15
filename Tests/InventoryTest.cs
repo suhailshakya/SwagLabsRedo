@@ -60,13 +60,13 @@ namespace AutomationRedo{
             }
         }
 
-        public void ValidateCartItems(){
+        public void AccessCart(){
             //first cart page
             inventObject.AccessCartItems();
             if (inventCartCount > 0 && checkCartSpanExist() != null){
                 Assert.That(inventCartCount, Is.EqualTo(int.Parse(checkCartSpanExist().Text)), "amount of items match in cart page");
                 //goes to cart personal info page
-                cartObject.CheckoutCart();
+                //cartObject.CheckoutCart2_AccessCart3();
             }
             else{
                 Assert.That(this.spanElement, Is.EqualTo(null), "Shopping cart badge not found due to no items in cart page");

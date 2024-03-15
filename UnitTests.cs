@@ -9,7 +9,9 @@ namespace AutomationRedo{
         IWebDriver swagDriver;
         LoginTest logger;
         InventoryTest inventory;
-        Cart2Checkout2Test carter;
+        CartTest cart1;
+        Cart2Checkout2Test cart2;
+        Cart3Checkout3Test cart3;
 
         //Unit tests not able to run without constructor --> why?
         // public Tests() : base(null)
@@ -23,7 +25,9 @@ namespace AutomationRedo{
             this.swagDriver = new ChromeDriver();
             logger = new LoginTest(this.swagDriver);
             inventory = new InventoryTest(this.swagDriver);
-            carter = new Cart2Checkout2Test(this.swagDriver);
+            cart1 = new CartTest(this.swagDriver);
+            cart2 = new Cart2Checkout2Test(this.swagDriver);
+            cart3 = new Cart3Checkout3Test(this.swagDriver);
         }
 
         //[Test] --> should not be separate test, just a method for steps prior to test
@@ -55,14 +59,20 @@ namespace AutomationRedo{
         }
 
         [Test]
-        public void AccessCart(){
+        public void AccessCartCheckout(){
             InventoryAddRemove();
-            inventory.ValidateCartItems();
-            carter.ValidInfoCheckout();
-            //try with invalid info
+            //check access to cart 1
+            inventory.AccessCart();
+            //check access to cart 2
+            cart1.AccessCart2();
+            //check access to cart 3 with valid info
+            cart2.ValidInfoCheckout_AccessCart3();
             Thread.Sleep(3000);
+            cart3.ValidateCart3Title();
+            Thread.Sleep(3000);
+            //try with invalid info
             //carter.InvalidInfoCheckout();
-            //inventory.ValidateCartItems();
+            
         }
 
         [OneTimeTearDown]

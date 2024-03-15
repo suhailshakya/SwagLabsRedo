@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutomationRedo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b5ce32f9e28170442ac2d7dc4d3059465e7f0f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutomationRedo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutomationRedo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
